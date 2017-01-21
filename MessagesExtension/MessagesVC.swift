@@ -109,8 +109,6 @@ extension MessagesVC {
         vc.view.translatesAutoresizingMaskIntoConstraints = false
         vc.view.isHidden = true
         view.addSubview(vc.view)
-
-        
         vc.view.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         vc.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         vc.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -147,3 +145,4 @@ extension MessagesVC {
         requestPresentationStyle(.expanded)
     }
 }
+

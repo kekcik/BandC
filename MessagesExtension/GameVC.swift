@@ -9,17 +9,25 @@
 import UIKit
 import Messages
 
-class GameVC: UIViewController {
+class GameVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var conversation : MSConversation?
     static let storyboardIdentifier = "GameViewController"
 
     @IBOutlet weak var leftC: NSLayoutConstraint!
     @IBOutlet weak var yellowButton: UIButton!
+    @IBOutlet weak var ratesTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layoutIfNeeded()
         print("view did load")
+        ratesTableView.register(UINib(nibName: "RateTableViewCell", bundle: nil), forCellReuseIdentifier: "RCell")
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(_: animated)
+        print("viewWillAppear")
     }
     
     @IBAction func setSize(_ sender: UIButton) {
@@ -27,9 +35,11 @@ class GameVC: UIViewController {
         MessageManager.sendTest(conversation: conversation!)
         parentVC.setCompactPresentationStyle()
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        print("viewDidAppear")
+
         self.view.layoutIfNeeded()
     }
     /*
@@ -42,4 +52,23 @@ class GameVC: UIViewController {
     }
     */
 
+}
+
+
+extension GameVC {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = ratesTableView.dequeueReusableCell(withIdentifier: "RCell", for: indexPath) as! RateTableViewCell
+        return cell
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 0
+    }
 }

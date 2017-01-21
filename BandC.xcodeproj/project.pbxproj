@@ -16,6 +16,8 @@
 		2C0F08311E2B74D7009FC048 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F08301E2B74D7009FC048 /* GameVC.swift */; };
 		2C0F08331E2B74E9009FC048 /* StickersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F08321E2B74E9009FC048 /* StickersVC.swift */; };
 		2C0F08361E2F74CB009FC048 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F08351E2F74CB009FC048 /* MessageManager.swift */; };
+		2C7ECACD1E34081C00FF95DE /* RateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7ECACB1E34081C00FF95DE /* RateTableViewCell.swift */; };
+		2C7ECACE1E34081C00FF95DE /* RateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7ECACC1E34081C00FF95DE /* RateTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		2C0F08301E2B74D7009FC048 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		2C0F08321E2B74E9009FC048 /* StickersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickersVC.swift; sourceTree = "<group>"; };
 		2C0F08351E2F74CB009FC048 /* MessageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
+		2C7ECACB1E34081C00FF95DE /* RateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateTableViewCell.swift; sourceTree = "<group>"; };
+		2C7ECACC1E34081C00FF95DE /* RateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RateTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		2C0F081A1E2B67C6009FC048 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				2C7ECACA1E3407F100FF95DE /* TableViewCells */,
 				2C0F08341E2CFF99009FC048 /* Managers */,
 				2C0F082D1E2B70DD009FC048 /* Views */,
 				2C0F082C1E2B7091009FC048 /* ViewControllers */,
@@ -141,6 +146,15 @@
 				2C0F08351E2F74CB009FC048 /* MessageManager.swift */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		2C7ECACA1E3407F100FF95DE /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2C7ECACB1E34081C00FF95DE /* RateTableViewCell.swift */,
+				2C7ECACC1E34081C00FF95DE /* RateTableViewCell.xib */,
+			);
+			name = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0F08211E2B67C6009FC048 /* Assets.xcassets in Resources */,
+				2C7ECACE1E34081C00FF95DE /* RateTableViewCell.xib in Resources */,
 				2C0F081F1E2B67C6009FC048 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +263,7 @@
 				2C0F08331E2B74E9009FC048 /* StickersVC.swift in Sources */,
 				2C0F08311E2B74D7009FC048 /* GameVC.swift in Sources */,
 				2C0F081C1E2B67C6009FC048 /* MessagesVC.swift in Sources */,
+				2C7ECACD1E34081C00FF95DE /* RateTableViewCell.swift in Sources */,
 				2C0F08361E2F74CB009FC048 /* MessageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +458,7 @@
 				2C0F08271E2B67C6009FC048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C0F08291E2B67C6009FC048 /* Build configuration list for PBXNativeTarget "BandC" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +467,7 @@
 				2C0F082B1E2B67C6009FC048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
