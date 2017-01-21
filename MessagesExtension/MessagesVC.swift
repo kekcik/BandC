@@ -107,13 +107,16 @@ extension MessagesVC {
         addChildViewController(vc)
         vc.view.frame = view.bounds
         vc.view.translatesAutoresizingMaskIntoConstraints = false
+        
+        // set hidden for recalculation constrains
         vc.view.isHidden = true
         view.addSubview(vc.view)
         vc.view.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         vc.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         vc.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         vc.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-
+        
+        
         vc.view.isHidden = false
         vc.didMove(toParentViewController: self)
     }

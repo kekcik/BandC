@@ -9,7 +9,7 @@
 import UIKit
 import Messages
 
-class GameVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class GameVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var conversation : MSConversation?
     static let storyboardIdentifier = "GameViewController"
 
@@ -19,9 +19,8 @@ class GameVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.layoutIfNeeded()
-        print("view did load")
-        ratesTableView.register(UINib(nibName: "RateTableViewCell", bundle: nil), forCellReuseIdentifier: "RCell")
+        self.ratesTableView.register(UINib(nibName: "RateTableViewCell",  bundle: nil), forCellReuseIdentifier: "RCell")
+        print("viewDidLoad")
         // Do any additional setup after loading the view.
     }
     
@@ -40,7 +39,7 @@ class GameVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidAppear(animated)
         print("viewDidAppear")
 
-        self.view.layoutIfNeeded()
+        //self.view.layoutIfNeeded()
     }
     /*
     // MARK: - Navigation
@@ -54,11 +53,10 @@ class GameVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
 }
 
-
 extension GameVC {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -69,6 +67,6 @@ extension GameVC {
         return cell
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
 }

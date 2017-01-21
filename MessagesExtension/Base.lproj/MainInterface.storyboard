@@ -241,6 +241,16 @@
                                             <constraint firstAttribute="width" constant="240" id="gSP-Ku-i1l"/>
                                             <constraint firstAttribute="height" constant="90" id="u9s-c5-Bzu"/>
                                         </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RateTableViewCell" id="rKc-F6-J8T">
+                                                <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rKc-F6-J8T" id="IUS-yN-Suz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
                                         <connections>
                                             <outlet property="dataSource" destination="ytz-Et-SgY" id="1Z8-tt-28X"/>
                                             <outlet property="delegate" destination="ytz-Et-SgY" id="ego-oq-JCh"/>
