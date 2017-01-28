@@ -10,10 +10,10 @@ import UIKit
 
 class RateTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var rateLabel: UILabel!
-    @IBOutlet weak var cowsLabel: UILabel!
-    @IBOutlet weak var bullsLabel: UILabel!
     
+    @IBOutlet weak var rate: UILabel!
+    @IBOutlet weak var cows: UILabel!
+    @IBOutlet weak var bulls: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

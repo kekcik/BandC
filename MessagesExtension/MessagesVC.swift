@@ -115,15 +115,13 @@ extension MessagesVC {
         vc.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         vc.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         vc.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        
-        
         vc.view.isHidden = false
         vc.didMove(toParentViewController: self)
     }
     private func instantiateGameVC() -> UIViewController {
         guard let controller = storyboard?.instantiateViewController(
             withIdentifier: GameVC.storyboardIdentifier) as? GameVC
-            else { fatalError("Unable to instantiate an IceCreamsViewController from the storyboard") }
+            else { fatalError("Unable to instantiate an GameVC from the storyboard") }
         
         //controller.delegate = self
         
@@ -132,7 +130,7 @@ extension MessagesVC {
     private func instantiateStickersVC() -> UIViewController {
         guard let controller = storyboard?.instantiateViewController(
             withIdentifier: StickersVC.storyboardIdentifier) as? StickersVC
-            else { fatalError("Unable to instantiate an IceCreamsViewController from the storyboard") }
+            else { fatalError("Unable to instantiate an StickersVC from the storyboard") }
         
         //controller.delegate = self
         

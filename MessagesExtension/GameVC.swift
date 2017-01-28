@@ -9,17 +9,61 @@
 import UIKit
 import Messages
 
-class GameVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class GameVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
     var conversation : MSConversation?
     static let storyboardIdentifier = "GameViewController"
-
+    /*\
+     *  Elements
+    \*/
+ 
+    @IBOutlet var numbers: Array <UIButton>!
+    @IBOutlet var rates: Array <UIButton>!
     @IBOutlet weak var leftC: NSLayoutConstraint!
     @IBOutlet weak var yellowButton: UIButton!
     @IBOutlet weak var ratesTableView: UITableView!
     
+    /*\
+     * Constrains
+     */
+    @IBOutlet weak var tableViewTop:        NSLayoutConstraint!
+    @IBOutlet weak var rateViewTop:         NSLayoutConstraint!
+    @IBOutlet weak var tableViewCentral:    NSLayoutConstraint!
+    @IBOutlet weak var numbersViewCentral:  NSLayoutConstraint!
+    @IBOutlet weak var statusViewCentral:   NSLayoutConstraint!
+    @IBOutlet weak var rateViewCentral:     NSLayoutConstraint!
+    @IBOutlet weak var buttonViewCentral:   NSLayoutConstraint!
+    @IBOutlet weak var buttonViewTop:       NSLayoutConstraint!
+    
+    @IBOutlet weak var statusWidth: NSLayoutConstraint!
+    @IBOutlet weak var buttonWidth: NSLayoutConstraint!
+    @IBOutlet weak var rateWidth: NSLayoutConstraint!
+    @IBOutlet weak var numbersWidth: NSLayoutConstraint!
+    @IBOutlet weak var tableWidth: NSLayoutConstraint!
+    @IBOutlet var widths : Array<NSLayoutConstraint>!
+    
+    @IBOutlet weak var buttonHeight: NSLayoutConstraint!
+    @IBOutlet weak var statusHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var numbersHeight: NSLayoutConstraint!
+    @IBOutlet weak var rateHeight: NSLayoutConstraint!
+    @IBOutlet weak var tableHeight: NSLayoutConstraint!
+    
+    @IBOutlet var intervals: Array<NSLayoutConstraint>!
+    /*\
+     * Variables
+     */
+    var isPortrait = true
+    
+    /*\
+     * Methods
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.ratesTableView.register(UINib(nibName: "RateTableViewCell",  bundle: nil), forCellReuseIdentifier: "RCell")
+
+        setOrientationAndSizes(firstCall: true)
+        self.view.setNeedsLayout()
+        registerCells()
+
         print("viewDidLoad")
         // Do any additional setup after loading the view.
     }
@@ -39,8 +83,15 @@ class GameVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         super.viewDidAppear(animated)
         print("viewDidAppear")
 
-        //self.view.layoutIfNeeded()
+        self.view.layoutIfNeeded()
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        print("viewWillTransition")
+        setOrientationAndSizes(firstCall: false)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -53,20 +104,3 @@ class GameVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
 }
 
-extension GameVC {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = ratesTableView.dequeueReusableCell(withIdentifier: "RCell", for: indexPath) as! RateTableViewCell
-        return cell
-    }
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-}

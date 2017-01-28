@@ -12,12 +12,15 @@
 		2C0F08191E2B67C6009FC048 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0F08181E2B67C6009FC048 /* Messages.framework */; };
 		2C0F081C1E2B67C6009FC048 /* MessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F081B1E2B67C6009FC048 /* MessagesVC.swift */; };
 		2C0F081F1E2B67C6009FC048 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0F081D1E2B67C6009FC048 /* MainInterface.storyboard */; };
-		2C0F08211E2B67C6009FC048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C0F08201E2B67C6009FC048 /* Assets.xcassets */; };
 		2C0F08311E2B74D7009FC048 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F08301E2B74D7009FC048 /* GameVC.swift */; };
 		2C0F08331E2B74E9009FC048 /* StickersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F08321E2B74E9009FC048 /* StickersVC.swift */; };
 		2C0F08361E2F74CB009FC048 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F08351E2F74CB009FC048 /* MessageManager.swift */; };
-		2C7ECACD1E34081C00FF95DE /* RateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7ECACB1E34081C00FF95DE /* RateTableViewCell.swift */; };
-		2C7ECACE1E34081C00FF95DE /* RateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7ECACC1E34081C00FF95DE /* RateTableViewCell.xib */; };
+		2C7ECAD11E341DF700FF95DE /* RateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7ECACF1E341DF700FF95DE /* RateTableViewCell.swift */; };
+		2C7ECAD21E341DF700FF95DE /* RateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7ECAD01E341DF700FF95DE /* RateTableViewCell.xib */; };
+		2C7ECAD51E3422D800FF95DE /* TablesGameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7ECAD41E3422D800FF95DE /* TablesGameExtension.swift */; };
+		2C7ECAD71E34267000FF95DE /* PresetsGameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7ECAD61E34267000FF95DE /* PresetsGameExtension.swift */; };
+		2C7ECADA1E3438EC00FF95DE /* SizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7ECAD91E3438EC00FF95DE /* SizeHelper.swift */; };
+		2C7ECAE01E35561B00FF95DE /* SizeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7ECADF1E35561B00FF95DE /* SizeProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,19 +49,22 @@
 
 /* Begin PBXFileReference section */
 		2C0F08091E2B67C6009FC048 /* BandC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C0F080C1E2B67C6009FC048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C0F080C1E2B67C6009FC048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../BandC/Assets.xcassets; sourceTree = "<group>"; };
 		2C0F080E1E2B67C6009FC048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C0F08131E2B67C6009FC048 /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0F08181E2B67C6009FC048 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		2C0F081B1E2B67C6009FC048 /* MessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesVC.swift; sourceTree = "<group>"; };
 		2C0F081E1E2B67C6009FC048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		2C0F08201E2B67C6009FC048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C0F08221E2B67C6009FC048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C0F08301E2B74D7009FC048 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		2C0F08321E2B74E9009FC048 /* StickersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickersVC.swift; sourceTree = "<group>"; };
 		2C0F08351E2F74CB009FC048 /* MessageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
-		2C7ECACB1E34081C00FF95DE /* RateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateTableViewCell.swift; sourceTree = "<group>"; };
-		2C7ECACC1E34081C00FF95DE /* RateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RateTableViewCell.xib; sourceTree = "<group>"; };
+		2C7ECACF1E341DF700FF95DE /* RateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateTableViewCell.swift; sourceTree = "<group>"; };
+		2C7ECAD01E341DF700FF95DE /* RateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RateTableViewCell.xib; sourceTree = "<group>"; };
+		2C7ECAD41E3422D800FF95DE /* TablesGameExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablesGameExtension.swift; sourceTree = "<group>"; };
+		2C7ECAD61E34267000FF95DE /* PresetsGameExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresetsGameExtension.swift; sourceTree = "<group>"; };
+		2C7ECAD91E3438EC00FF95DE /* SizeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeHelper.swift; sourceTree = "<group>"; };
+		2C7ECADF1E35561B00FF95DE /* SizeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,6 @@
 		2C0F080B1E2B67C6009FC048 /* BandC */ = {
 			isa = PBXGroup;
 			children = (
-				2C0F080C1E2B67C6009FC048 /* Assets.xcassets */,
 				2C0F080E1E2B67C6009FC048 /* Info.plist */,
 			);
 			path = BandC;
@@ -112,12 +117,16 @@
 		2C0F081A1E2B67C6009FC048 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				2C7ECADE1E35560700FF95DE /* Protocols */,
+				2C7ECADB1E34BC7000FF95DE /* Delegate */,
+				2C7ECAD81E3438DD00FF95DE /* Helpers */,
+				2C7ECAD31E3422B100FF95DE /* VCExtensions */,
 				2C7ECACA1E3407F100FF95DE /* TableViewCells */,
 				2C0F08341E2CFF99009FC048 /* Managers */,
 				2C0F082D1E2B70DD009FC048 /* Views */,
 				2C0F082C1E2B7091009FC048 /* ViewControllers */,
 				2C0F081D1E2B67C6009FC048 /* MainInterface.storyboard */,
-				2C0F08201E2B67C6009FC048 /* Assets.xcassets */,
+				2C0F080C1E2B67C6009FC048 /* Assets.xcassets */,
 				2C0F08221E2B67C6009FC048 /* Info.plist */,
 			);
 			path = MessagesExtension;
@@ -151,10 +160,42 @@
 		2C7ECACA1E3407F100FF95DE /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				2C7ECACB1E34081C00FF95DE /* RateTableViewCell.swift */,
-				2C7ECACC1E34081C00FF95DE /* RateTableViewCell.xib */,
+				2C7ECACF1E341DF700FF95DE /* RateTableViewCell.swift */,
+				2C7ECAD01E341DF700FF95DE /* RateTableViewCell.xib */,
 			);
 			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		2C7ECAD31E3422B100FF95DE /* VCExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C7ECAD41E3422D800FF95DE /* TablesGameExtension.swift */,
+				2C7ECAD61E34267000FF95DE /* PresetsGameExtension.swift */,
+			);
+			name = VCExtensions;
+			sourceTree = "<group>";
+		};
+		2C7ECAD81E3438DD00FF95DE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2C7ECAD91E3438EC00FF95DE /* SizeHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		2C7ECADB1E34BC7000FF95DE /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		2C7ECADE1E35560700FF95DE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2C7ECADF1E35561B00FF95DE /* SizeProtocol.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,8 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C0F08211E2B67C6009FC048 /* Assets.xcassets in Resources */,
-				2C7ECACE1E34081C00FF95DE /* RateTableViewCell.xib in Resources */,
+				2C7ECAD21E341DF700FF95DE /* RateTableViewCell.xib in Resources */,
 				2C0F081F1E2B67C6009FC048 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,9 +301,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0F08331E2B74E9009FC048 /* StickersVC.swift in Sources */,
+				2C7ECAD71E34267000FF95DE /* PresetsGameExtension.swift in Sources */,
+				2C7ECAE01E35561B00FF95DE /* SizeProtocol.swift in Sources */,
 				2C0F08311E2B74D7009FC048 /* GameVC.swift in Sources */,
 				2C0F081C1E2B67C6009FC048 /* MessagesVC.swift in Sources */,
-				2C7ECACD1E34081C00FF95DE /* RateTableViewCell.swift in Sources */,
+				2C7ECAD11E341DF700FF95DE /* RateTableViewCell.swift in Sources */,
+				2C7ECAD51E3422D800FF95DE /* TablesGameExtension.swift in Sources */,
+				2C7ECADA1E3438EC00FF95DE /* SizeHelper.swift in Sources */,
 				2C0F08361E2F74CB009FC048 /* MessageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,7 +461,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = B5SWW93MKD;
 				INFOPLIST_FILE = BandC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				PRODUCT_BUNDLE_IDENTIFIER = Trofimov.BandC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -432,7 +476,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = B5SWW93MKD;
 				INFOPLIST_FILE = BandC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				PRODUCT_BUNDLE_IDENTIFIER = Trofimov.BandC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
