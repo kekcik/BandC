@@ -11,8 +11,8 @@
 - Сделать некоторые стикеры доступными только после определенных достижений 
 
 ----------------------------------------------------------------------------------
-![alt tag](https://github.com/kekcik/BandC/scr/s1.png)
-![alt tag](https://github.com/kekcik/BandC/scr/s2.png)
-![alt tag](https://github.com/kekcik/BandC/scr/s3.png)
-![alt tag](https://github.com/kekcik/BandC/scr/s4.png)
+![alt tag](https://github.com/kekcik/BandC/blob/master/scr/s1.png)
+![alt tag](https://github.com/kekcik/BandC/blob/master/scr/s2.png)
+![alt tag](https://github.com/kekcik/BandC/blob/master/scr/s3.png)
+![alt tag](https://github.com/kekcik/BandC/blob/master/scr/s4.png)
 
