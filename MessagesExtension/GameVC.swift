@@ -15,12 +15,11 @@ class GameVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
     /*\
      *  Elements
     \*/
- 
-    @IBOutlet var numbers: Array <UIButton>!
-    @IBOutlet var rates: Array <UIButton>!
-    @IBOutlet weak var leftC: NSLayoutConstraint!
-    @IBOutlet weak var yellowButton: UIButton!
-    @IBOutlet weak var ratesTableView: UITableView!
+    @IBOutlet var numbers:                  Array <UIButton>!
+    @IBOutlet var rates:                    Array <UIButton>!
+    @IBOutlet weak var status:              UILabel!
+    @IBOutlet weak var ratesTableView:      UITableView!
+    @IBOutlet weak var mainButton:          UIButton!
     
     /*\
      * Constrains
@@ -34,38 +33,36 @@ class GameVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var buttonViewCentral:   NSLayoutConstraint!
     @IBOutlet weak var buttonViewTop:       NSLayoutConstraint!
     
-    @IBOutlet weak var statusWidth: NSLayoutConstraint!
-    @IBOutlet weak var buttonWidth: NSLayoutConstraint!
-    @IBOutlet weak var rateWidth: NSLayoutConstraint!
-    @IBOutlet weak var numbersWidth: NSLayoutConstraint!
-    @IBOutlet weak var tableWidth: NSLayoutConstraint!
-    @IBOutlet var widths : Array<NSLayoutConstraint>!
+    @IBOutlet weak var statusWidth:         NSLayoutConstraint!
+    @IBOutlet weak var buttonWidth:         NSLayoutConstraint!
+    @IBOutlet weak var rateWidth:           NSLayoutConstraint!
+    @IBOutlet weak var numbersWidth:        NSLayoutConstraint!
+    @IBOutlet weak var tableWidth:          NSLayoutConstraint!
+    @IBOutlet var widths:                   Array<NSLayoutConstraint>!
     
-    @IBOutlet weak var buttonHeight: NSLayoutConstraint!
-    @IBOutlet weak var statusHeight: NSLayoutConstraint!
+    @IBOutlet weak var buttonHeight:        NSLayoutConstraint!
+    @IBOutlet weak var statusHeight:        NSLayoutConstraint!
     
-    @IBOutlet weak var numbersHeight: NSLayoutConstraint!
-    @IBOutlet weak var rateHeight: NSLayoutConstraint!
-    @IBOutlet weak var tableHeight: NSLayoutConstraint!
+    @IBOutlet weak var numbersHeight:       NSLayoutConstraint!
+    @IBOutlet weak var rateHeight:          NSLayoutConstraint!
+    @IBOutlet weak var tableHeight:         NSLayoutConstraint!
     
-    @IBOutlet var intervals: Array<NSLayoutConstraint>!
+    @IBOutlet var intervals:                Array<NSLayoutConstraint>!
     /*\
      * Variables
      */
     var isPortrait = true
     
     /*\
-     * Methods
+     * Lifecycle methods
      */
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //setColors()
         setOrientationAndSizes(firstCall: true)
         self.view.setNeedsLayout()
         registerCells()
-
         print("viewDidLoad")
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,16 +70,9 @@ class GameVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
         print("viewWillAppear")
     }
     
-    @IBAction func setSize(_ sender: UIButton) {
-        let parentVC = parent as! MessagesVC
-        MessageManager.sendTest(conversation: conversation!)
-        parentVC.setCompactPresentationStyle()
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print("viewDidAppear")
-
         self.view.layoutIfNeeded()
     }
     
@@ -92,6 +82,14 @@ class GameVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
         setOrientationAndSizes(firstCall: false)
     }
     
+    /*\
+     * Elements methods
+     */
+    @IBAction func setSize(_ sender: UIButton) {
+        let parentVC = parent as! MessagesVC
+        MessageManager.sendTest(conversation: conversation!)
+        parentVC.setCompactPresentationStyle()
+    }
     /*
     // MARK: - Navigation
 

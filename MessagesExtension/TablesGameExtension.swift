@@ -22,9 +22,9 @@ extension GameVC {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.ratesTableView.dequeueReusableCell(withIdentifier: "RateCell", for: indexPath) as! RateTableViewCell
-        cell.rate.text = "2222"
-        cell.cows.text = "0 cows"
-        cell.bulls.text = "4 bulls"
+        cell.rate.text = ["1057", "1703", "4351"][indexPath.row]
+        cell.cows.text = ["0 коров", "1 корова", "2 коровы"][indexPath.row]
+        cell.bulls.text = ["2 быка", "1 бык", "0 быков"][indexPath.row]
         return cell
     }
     

@@ -19,8 +19,6 @@ extension GameVC {
         buttonHeight.constant       = size.ButtonHeight
         rateHeight.constant         = size.RateHeight
         numbersHeight.constant      = size.NumbersHeight
-        
-        
         for i in intervals {
             i.constant = size.ElementInterval
         }
@@ -57,5 +55,17 @@ extension GameVC {
         let size = SizeHelper.init(frame: view.frame).s
         setSizes(size: size)
         setPosition(size: size)
+    }
+    func setColors() {
+        for rate in rates {
+            rate.backgroundColor = UIColor.white
+        }
+        for number in numbers {
+            number.backgroundColor = UIColor.white
+        }
+        status.backgroundColor = UIColor.white
+        mainButton.backgroundColor = UIColor.white
+        status.textColor = UIColor.gray
+        mainButton.setTitleColor(UIColor.gray, for: UIControlState.selected)
     }
 }

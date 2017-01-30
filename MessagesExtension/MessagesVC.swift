@@ -57,6 +57,7 @@ class MessagesVC: MSMessagesAppViewController {
     
     override func didStartSending(_ message: MSMessage, conversation: MSConversation) {
         print("didStartSending was called")
+        
         // Called when the user taps the send button.
     }
     
