@@ -11,8 +11,13 @@
 - Сделать некоторые стикеры доступными только после определенных достижений 
 
 ----------------------------------------------------------------------------------
-![alt tag](https://github.com/kekcik/BandC/blob/master/scr/s1.png)
-![alt tag](https://github.com/kekcik/BandC/blob/master/scr/s2.png)
-![alt tag](https://github.com/kekcik/BandC/blob/master/scr/s3.png)
-![alt tag](https://github.com/kekcik/BandC/blob/master/scr/s4.png)
-
+<div align="center">
+        <img width="30%" src="scr/s1.png" alt="About screen" title="About screen"</img>
+        <img height="0" width="8px">
+        <img width="30%" src="scr/s2.png" alt="List screen" title="List screen"></img>
+</div>
+<div align="center">
+        <img width="30%" src="scr/s3.png" alt="About screen" title="About screen"</img>
+        <img height="0" width="8px">
+        <img width="30%" src="scr/s4.png" alt="List screen" title="List screen"></img>
+</div>
