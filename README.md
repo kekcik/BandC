@@ -12,12 +12,12 @@
 
 ----------------------------------------------------------------------------------
 <div align="center">
-        <img width="30%" src="scr/s1.png" alt="About screen" title="About screen"</img>
+        <img width="30%" src="scr/s1.png" alt="Main screen" title="About screen"</img>
         <img height="0" width="8px">
-        <img width="30%" src="scr/s2.png" alt="List screen" title="List screen"></img>
+        <img width="30%" src="scr/s2.png" alt="Main screen" title="List screen"></img>
+        <img height="0" width="8px">
+        <img width="30%" src="scr/s3.png" alt="Main screen" title="About screen"</img>
 </div>
 <div align="center">
-        <img width="30%" src="scr/s3.png" alt="About screen" title="About screen"</img>
-        <img height="0" width="8px">
-        <img width="30%" src="scr/s4.png" alt="List screen" title="List screen"></img>
+        <img width="80%" src="scr/s4.png" alt="Main screen" title="List screen"></img>
 </div>
